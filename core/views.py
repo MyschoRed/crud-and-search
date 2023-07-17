@@ -38,6 +38,7 @@ def index(request):
             if request.POST.get('searchqueryname'):
                 query = request.POST.get('searchqueryname')
                 students = Student.objects.filter(Q(name__icontains=query))
+                # students = Student.objects.filter(Q(name__icontains=query) | Q(email__icontains=query))  # for fulltext search
             elif request.POST.get('searchqueryemail'):
                 query = request.POST.get('searchqueryemail')
                 students = Student.objects.filter(Q(email__icontains=query))
