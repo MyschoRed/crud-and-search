@@ -1,2 +1,2 @@
 # crud-and-search
-Samble of CRUD opreration in Django Frmamework
+Sample of CRUD opreration in Django Frmamework
